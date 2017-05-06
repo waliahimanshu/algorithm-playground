@@ -24,13 +24,13 @@ public class BinarySearchTree {
     }
 
     private void insert(Node root, int item) {
-        if (root.data < item) {
+        if (item < root.data) {
             if (root.left == null) {
                 root.left = new Node(item);
             } else {
                 insert(root.left, item);
             }
-        } else if (root.data > item) {
+        } else if (item > root.data) {
             if (root.right == null) {
                 root.right = new Node(item);
 
@@ -47,7 +47,7 @@ public class BinarySearchTree {
 
     private String toString(Node node) {
         if (node == null) {
-            return null;
+            return "";
         }
         return "[" + toString(node.left) + "," + node.data + "," + toString(node.right) + "]";
     }

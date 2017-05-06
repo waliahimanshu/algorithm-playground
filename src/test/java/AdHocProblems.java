@@ -28,7 +28,7 @@ public class AdHocProblems {
 
 
     @Test
-    public void sum_of_first_N_powers_of_2_starting_from_1() throws Exception {
+    public void sumPowerOfTwo() throws Exception {
 
         int n = 10;
         int sum = 0;
@@ -55,8 +55,7 @@ public class AdHocProblems {
     }
 
     private int power(int i, int p) throws InvalidArgumentException {
-        if(p == 0)
-        {
+        if(p == 0) {
             return 1;
         }
 
