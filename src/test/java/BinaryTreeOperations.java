@@ -1,14 +1,11 @@
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.nullValue;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertThat;
+import static org.junit.Assert.*;
 
-public class BinaryTressOperations {
+public class BinaryTreeOperations {
 
     private BinarySearchTree tree;
 
@@ -133,39 +130,8 @@ public class BinaryTressOperations {
 
     private Node imperativeInsert(Node root, int itemToInsert) {
 
-        Node pointer = tree.root;
-        Node prev = null;
-
-        boolean left = false;
-        while (pointer != null) {
-
-            if (itemToInsert == pointer.data) {
-                throw new IllegalArgumentException();
-            }
-            prev = pointer;
-
-            if (itemToInsert < pointer.left.data) {
-                pointer = pointer.left;
-                left = true;
-            }
-            if (itemToInsert > pointer.right.data) {
-                pointer = pointer.right;
-                left = false;
-            }
-
-        }
-        Node newNode = new Node(itemToInsert);
-        if (pointer == null) {
-            return newNode;
-        }
-
-        if (left) {
-            prev.left = newNode;
-        } else {
-            prev.right = newNode;
-        }
-
-        return root;
+       // ??
+        return null;
     }
 
 
@@ -212,7 +178,6 @@ public class BinaryTressOperations {
                 pointer = pointer.right;
             }
         }
-
         return null;
 
     }
