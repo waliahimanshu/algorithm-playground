@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/KotlinTut/KotlinTut.iml" filepath="$PROJECT_DIR$/KotlinTut/KotlinTut.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/algorithm-playground.iml" filepath="$PROJECT_DIR$/.idea/modules/algorithm-playground.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/algorithm-playground_main.iml" filepath="$PROJECT_DIR$/.idea/modules/algorithm-playground_main.iml" group="algorithm-playground" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/algorithm-playground_test.iml" filepath="$PROJECT_DIR$/.idea/modules/algorithm-playground_test.iml" group="algorithm-playground" />

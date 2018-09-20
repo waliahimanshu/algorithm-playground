@@ -27,10 +27,8 @@ public class StringProblems {
             for (int j = i; j < prices[i].length; j++) {
                 if (prices[i][j] != -1) {
 
-                        max_ending_here = Math.min(prices[i][j], max_ending_here + prices[i][j]);
-                        max_so_far = Math.min(max_so_far, max_ending_here);
-
-
+                    max_ending_here = Math.min(prices[i][j], max_ending_here + prices[i][j]);
+                    max_so_far = Math.min(max_so_far, max_ending_here);
 
 
                 }
@@ -51,11 +49,11 @@ public class StringProblems {
     }
 
     public int maxSubArray(int[] A) {
-        int newsum=A[0];
-        int max=A[0];
+        int newsum = A[0];
+        int max = A[0];
 
-        for(int i=1;i<A.length;i++){
-            if(A[i]!=-1) {
+        for (int i = 1; i < A.length; i++) {
+            if (A[i] != -1) {
                 newsum = Math.min(newsum + A[i], A[i]);
                 max = Math.min(max, newsum);
             }
