@@ -26,12 +26,18 @@ public class BinaryTreeOperations {
 
     }
 
+    /**
+     * Depth first Search
+     * @throws Exception
+     */
+
     @Test
     public void treeTraversals() throws Exception {
 
-        System.out.println("// Visit the root first, then left and right sub-trees\n");
+        System.out.println("// Visit the root first, then deep to left and deep to right sub-trees\n");
         traversePreOrder(tree.root);
 
+        //The left first, the middle second, and the right last.
         System.out.println("// Visit left sub-tree, then root and then, right sub-tree\n");
         traverseInOrder(tree.root);
 
@@ -119,10 +125,10 @@ public class BinaryTreeOperations {
 
         // Visit left sub-tree right sub-tree and then root
         if (root.left != null) {
-            traverseInOrder(root.left);
+            traversePostOrder(root.left);
         }
         if (root.right != null) {
-            traverseInOrder(root.right);
+            traversePostOrder(root.right);
         }
         System.out.println(root.data);
 

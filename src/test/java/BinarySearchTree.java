@@ -40,6 +40,19 @@ public class BinarySearchTree {
         }
     }
 
+
+
+    private void insertLeft(Node root, int item){
+
+        if(root.left == null) {
+            root.left = new Node(item);
+        } else {
+            Node newNode = new Node(item);
+            newNode.left = root.left;
+            root.left = newNode;
+        }
+
+    }
     @Override
     public String toString() {
         return toString(root);

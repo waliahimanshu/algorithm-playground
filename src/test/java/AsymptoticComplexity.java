@@ -14,6 +14,7 @@ public class AsymptoticComplexity {
  * Binary search
  * O(log n) worst case
  *  Ω(1) best case, the element is right in middle
+
  * Linear search
  * O(n)
  * O(1) if the element is first one.
